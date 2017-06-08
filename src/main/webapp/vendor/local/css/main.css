@@ -1,0 +1,114 @@
+body{
+	font-family: "Microsoft YaHei",arial,SimSun,"宋体";
+	font-size: 14px;
+	color: #666;
+}
+li {
+	list-style: none;
+}
+.btn-hm {
+  color: #fff;
+  background-color: #3b8cff;
+  border-color: #2e6da4;
+}
+.btn-hm:HOVER {
+	color: #fff!important;
+	background-color: 77afff;
+}
+
+.btn-hm:ACTIVE,
+.btn-hm.ACTIVE,
+.btn-hm:FOCUS,
+.btn-hm.FOCUS {
+	color: #fff!important;
+  	background-color: #3b8cff;
+  	border-color: #2e6da4;
+}
+
+a.hm-a {
+	color: #3B8CFF;
+	text-decoration: none;
+}
+a.hm-a:HOVER,
+a.hm-a:FOCUS {
+	color: #3B8CFF;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.hm-error {
+	color: #D43030;
+}
+.hm-label {
+	float: left;
+	width: 73px;
+	font-weight: bold;
+	text-align: right;
+}
+.hm-content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+table.hm-table {
+	font-size: 14px!important;
+}
+table.hm-table .span-check {
+	padding-right: 10px;	
+}
+table.hm-table td {
+	height: 40px;
+}
+table.hm-table .td-check {
+	width: 20px!important;
+}
+table.hm-table .td-update-time {
+	width: 160px!important;
+}
+table.hm-table th {
+	padding-left: 8px!important;
+	padding-right: 8px!important;
+}
+
+.modulePage input[type="search"] {
+	width: 200px;
+}
+
+.userPage,
+.rolePage,
+.areaPage,
+.certificationPage,
+.financingPage,
+.jobPage,
+.logisticsSupplyPage,
+.personalInfoPage,
+.companyInfoPage,
+.purchasePage {
+	padding: 15px 0;
+}
+
+.financingManagerPage .tab-pane,
+.manufactureManagerPage .tab-pane,
+.recommendCompanyPage .tab-pane,
+.manufactureCompanyPage .tab-pane,
+.logisticsCompanyPage .tab-pane,
+.talentCompanyPage .tab-pane,
+.financingCompanyPage .tab-pane,
+.companyPage .tab-pane {
+	padding: 15px;
+}
+
+.module-toolbar {
+	padding: 5px 0;
+}
+.module-list {
+	padding: 10px;
+}
+
+/* evalution stars */
+.stars {
+	color: #FAA80D;
+	font-size: 16px;
+	position: relative;
+    top: 2px;
+}

@@ -1,0 +1,378 @@
+.m-hidden {
+	display: none;
+}
+img {
+	width: 100%;
+}
+#menu_outer .nav li {
+    width: 19%;
+    margin: auto;
+}
+#page {
+	min-width: inherit;
+}
+.menu {
+	height: 40px;
+}
+.menu .menu_wrapper {
+	width: 100%;
+}
+#menu_outer {
+	width: 100%;
+}
+#menu_outer .nav li a {
+    font-size: inherit;
+    line-height: 35px;
+    padding: 0;
+}
+.nav > li > a {
+    padding: 8px 10px;
+}
+.nav-wraper {
+    font-size: 14px;
+}
+.weizhi {
+    font-size: 12px;
+    width: inherit;
+}
+.row {
+	margin: 0;
+}
+.main_container {
+	font-size: 1rem;
+}
+.unit-list li, .policy-list li, .line-list li, 
+.network-list li, .supply-list li, .dynamic-list li, 
+.financing-list li, .bulletin-list .list-content li, 
+.successcase-list li {
+    padding: 5px;
+    margin: 5px 5px 10px 5px;
+}
+.top_info {
+    width: inherit;
+}
+.top_info .top_info_wrap img {
+    width: 30%;
+    height: inherit;
+}
+.top_info .top_info_wrap {
+    height: inherit;
+    margin: 0 0 10px 0;
+    border: none;
+}
+.top_info .top_info_wrap .company_info {
+    margin-left: 35%;
+}
+.company_navs_wrap {
+    width: inherit;
+    height: 75px;
+}
+.company_navs_wrap li {
+    height: inherit;
+    margin-right: 10px;
+}
+.company_navs_wrap li a {
+    padding: 5px 2px;
+    font-size: 1.5rem;
+}
+#enterpriseinfo_container {
+    width: inherit;
+}
+#enterpriseinfo_container #left {
+    display: none;
+}
+#enterpriseinfo_container #right {
+	float: left;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+}
+.company_main {
+    padding-top: 10px;
+}
+.identification { 
+	font-size: 1rem;
+}
+.tiny-enterpriseinfo {
+	display: inherit;
+    line-height: 1.7rem;
+    margin-top: 10px;
+}
+/** 企业推介start **/
+.content-container {
+	width: inherit;
+}
+.bulletin-list .img-wraper,
+.offer-list .img-wraper {
+	width: 30%;
+	float: left;
+	padding: 0;
+}
+.unit-list .img-wraper {
+	width: 25%;
+}
+.unit-list .img-wraper img, .bulletin-list .img-wraper img,
+.offer-list .img-wraper img {
+	width: 100%;
+	height: auto;
+}
+.bulletin-list .content, .unit-list .content {
+    margin: 5px 0;
+}
+.product-intro, .product-otherinfo, .product-name {
+    line-height: inherit!important;
+}
+/** 企业推介end **/
+
+
+/** 智能制造start **/
+.list .subnav {
+    line-height: 30px;
+}
+.list .subnav li {
+    margin: 0 10px;
+}
+.list .subnav li a {
+    line-height: 20px;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.item-right {
+	width: 70%;
+	float: left;
+	padding-right: 0;
+}
+/*供求商机*/
+.offer-list .product-list {
+	width:45%;
+	float: left;
+}
+.purchase-list ul li ol {
+	padding: 0;
+}
+/* 智能产品 */
+.productType-list ol {
+    width: inherit;
+    padding: 10px;
+}
+.productList .img-wrapper {
+	width: 25%!important;
+}
+.productinfo-bottom .rigth {
+	clear: both;
+}
+.productinfo-top table tr{
+	line-height: 15px;
+}
+.tiny-productinfo-table {
+	display: block!important;
+}
+.productinfo-top table tr {
+    line-height: 20px!important;
+}
+.productinfo-top table td {
+	word-break: keep-all;
+}
+.productinfo-top, .productinfo-bottom .left, 
+.productinfo-bottom .right {
+	padding: 5px;
+}
+.productinfo-bottom .right {
+	padding-bottom: 30px;
+}
+.manufacture-productinfo .weizhi ul {
+    height: 40px;
+}
+.productinfo-bottom .right > div:not(:last-child) {
+    margin-bottom: 8px!important;
+}
+.product-info .left {
+    border: none;
+}
+/* 智能制造企业 */
+
+/** 智能制造end **/
+
+/** 人才服务start **/
+.nav-wraper .nav-bar .input-wraper input[type=text] {
+    height: 35px;
+    line-height: 35px;
+}
+#searchStr {
+	width: inherit;
+}
+.nav-wraper .nav-bar .input-wraper .submit { 
+	width: 80px;
+}
+.filter-wraper .select dl {
+	height: 20px;
+}
+.filter-wraper .select .select-list:not(:last-child) {
+    position: relative;
+}
+.filter-wraper .select-dt {
+    margin: 0;
+    left: 5px;
+}
+.filter-wraper .select-dd {
+    margin: 2px 3px;
+    width: inherit;
+    line-height: inherit;
+}
+.filter-wraper .select-a {
+    padding: 0;
+}
+.filter-wraper .select .selected a {
+    padding: 0 5px;
+}
+.filter-wraper .select .select-result a {
+    background: #3b8cff url("/service/img/close.gif") no-repeat scroll right 5px;
+    padding-right: 20px;
+}
+.filter-wraper .select-toggle {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin: 0;
+}
+.filter-wraper .select li {
+    padding: 0 0 0 60px;
+}
+
+/** 招聘信息 **/
+.recruitmentinfo-list-item .list-item {
+    padding: 5px;
+}
+.recruitmentinfo-list-item .list-item .position {
+    width: 50%;
+    margin-right: 10px;
+}
+.recruitmentinfo-list-item .list-item .position .p_top {
+	height: 20px;
+    line-height: 20px;
+}
+.recruitmentinfo-list-item .list-item .position .p_bot {
+    height: inherit;
+    line-height: inherit;
+}
+.recruitmentinfo-list-item .list-item .position .p_top h2 {
+    font-size: 1.5rem;
+    line-height: inherit;
+}
+.recruitmentinfo-list-item .list-item .position .p_bot .li_b_l span.money {
+    font-size: 1.5rem;
+}
+.recruitmentinfo-list-item .list-item .company {
+    width: 23%;
+    margin: 0;
+}
+.recruitmentinfo-list-item .list-item .company .company_name a {
+    font-size: 1.5rem;
+}
+.recruitmentinfo-list-item .list-item .company .industry {
+    line-height: 5rem;
+}
+.recruitmentinfo-list-item .list-item .com_logo {
+    width: 20%;
+    margin: 0;
+}
+.recruitmentinfo-list-item .list-item .com_logo img{
+    width: 100%;
+    height: inherit;
+}
+.recruitmentinfo-list-item .list-item .position .p_top span {
+    margin: 0 3px;
+}
+.recruitmentinfo-list-item .list-item .company .company_name {
+    height: inherit;
+    line-height: inherit;
+}
+.recruitmentinfo-container {
+    width: inherit;
+}
+.position-head .position-content {
+    width: inherit;
+    padding: 10px 20px;
+}
+.content_l {
+    width: 100%;
+    padding: 10px;
+}
+/** 求职信息 **/
+.job-list .row > div {
+	padding: 0;
+}
+/** 职位详情 **/
+.apply-head .userpic {
+    width: 40%;
+}
+.tiny-jobinfo-table {
+	display: initial;
+}
+.apply-detail .title {
+    margin-left: 0;
+}
+/** 服务单位  **/
+.unit-list .evaluation {
+    line-height: inherit;
+}
+/** 企业详情 **/
+#enterpriseinfo_container .position {
+    width: 60%;
+}
+/** 人才服务end **/
+
+/** 融资服务 **/
+.financing-list li > div {
+    line-height: 1.6rem;
+}
+.policy-list .content, .successcase-list .content, .dynamic-list .content {
+    margin: 5px 0;
+}
+.financingInfo-content {
+    width: inherit;
+    padding: 10px;
+}
+.financingInfo {
+    padding: 0;
+    margin-bottom: 20px;
+}
+.project-description span.title,
+.project-advantage span.title, .contactUs span.title {
+	font-size: 1.5rem;
+    padding: 0 10px;
+}
+.project-description div:not(.title), 
+.project-advantage div:not(.title), 
+.contactUs div:not(.title) {
+    padding: 10px;
+}
+/** 物流服务 **/
+.tiny-logistics-filter {
+	display: initial;
+}
+.network .filter-wraper .row {
+    width: inherit;
+}
+.network-list .row > div, .line-list .row > div, .job-list .row > ol {
+	padding: 0;
+}
+.unit-list .company-name,
+.successcase-list .company-name, 
+.dynamic-list .company-name {
+    line-height: 70px;
+}
+.unit-list .row > div, .successcase-list .row > div, 
+.dynamic-list .row > div, .financing-list .row > div,
+.productinfo-top > div {
+    padding-left: 0;
+}
+/** 货源信息 **/
+.supply-list .supply-item .title a {
+	font-size: 1.5rem;
+}
+
+
+#footer {
+    min-width: inherit;
+}
