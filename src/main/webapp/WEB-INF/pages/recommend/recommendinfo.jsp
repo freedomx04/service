@@ -21,12 +21,8 @@
 <link type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)" href="./vendor/local/css/tinyScreen.css"/>
 
 <style>
-.dynamicinfo-content .top {
-    text-align: center;
-    line-height: 30px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
+.recommendinfo .hm-label {
+    width: 90px;
 }
 </style>
 
@@ -43,11 +39,10 @@
 				<div class="weizhi">
 					<ul style="margin-bottom: 10px;">
 					    <li><a href="recommend" target="_blank">企业推介</a></li>
-					    <li><a href="recommend" target="_blank">企业推介</a></li>
 					    <li class="active">企业详情</li>
 					</ul>
 				</div>
-				<div class="dynamicinfo-content">
+				<div class="recommendinfo">
 				</div>
 			</div>
 		</div>
@@ -59,9 +54,79 @@
 
 <script class='template RecommendInfo' type='text/x-jquery-tmpl'>
 <div class="top">
-	<div class="line-break" style="font-size: 20px;">{{=it.data.name}}</div>
-	<div>
-		<span><span class="color-9">发布时间：</span><span>{{=$k.util.getDateString(it.data.createTime)}}</span></span>
+	<div class="line-break" style="font-size: 20px;text-align: center">{{=it.data.name}}</div>
+	<div class="module-list" style="line-height: 25px; word-break: break-all;">
+		<div style="max-width: 300px; max-height: 300px; float: right">
+			{{? it.data.imagePath}}
+	    		<img class='am-u-sm-3 am-radius' src='{{="./"+it.data.imagePath}}' style='width:100%;'>
+			{{??}}
+				<img src='img/enterprise_default.jpg'>
+			{{?}}
+		</div>
+
+		<p>
+			<span class="hm-label">认证状态:</span>
+			<span class="hm-content" style="color: #3b8cff; font-weight: bold;">{{=$k.constant.certification[it.data.status].name}}</span>
+		</p>
+		<p>
+			<span class="hm-label">公司名称:</span>
+			<span class="hm-content">{{=it.data.name}}</span>
+		</p>
+		<p>
+			<span class="hm-label">行业类别:</span>
+			<span class="hm-content">{{=$k.constant.profession[it.data.profession].name}}</span>
+		</p>
+		<p>
+			<span class="hm-label">公司性质:</span>
+			<span class="hm-content">{{=$k.constant.property[it.data.property].name}}</span>
+		</p>
+		<p>
+			<span class="hm-label">公司规模:</span>
+			<span class="hm-content">{{=$k.constant.scale[it.data.scale].name}}</span>
+		</p>
+		<p>
+			<span class="hm-label">公司地点:</span>
+			<span class="hm-content">{{=it.data.area != null ? it.data.area.name : ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">公司地址:</span>
+			<span class="hm-content">{{=it.data.address || ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">座机号码:</span>
+			<span class="hm-content">{{=it.data.phone || ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">传真号:</span>
+			<span class="hm-content">{{=it.data.fax || ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">联系人:</span>
+			<span class="hm-content">{{=it.data.contactUser || ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">联系方式:</span>
+			<span class="hm-content">{{=it.data.contact || ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">公司网站:</span>
+			<span class="hm-content">{{=it.data.website || ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">公司简介:</span>
+			<span class="hm-content">{{=it.data.introduction || ""}}</span>
+		</p>
+		<p>
+			<span class="hm-label">已入驻服务:</span>
+			<span class="hm-content">
+				{{? it.data.statusRecommend == 0}}企业推介
+				{{?? it.data.statusManufacture == 0}}智能制造
+				{{?? it.data.statusTalent == 0}}人才服务
+				{{?? it.data.statusFinancing == 0}}融资服务
+				{{?? it.data.statusLogistics == 0}}物流服务
+				{{??}}暂未入驻服务{{?}}
+			</span>
+		</p>
 	</div>
 </div>
 <div class="line-break">{{=it.data.content}}</div>
@@ -86,7 +151,7 @@
 		data: {companyId: id},
 		success: function(data) {
 			if(data.status == 0) {
-				$content.find(".dynamicinfo-content").html($(".template.RecommendInfo").doT({
+				$content.find(".recommendinfo").html($(".template.RecommendInfo").doT({
 					data: data.data
 				}));
 			}
